@@ -1,0 +1,16 @@
+<form id="payment_confirmation" name="payment_confirmation" action="https://testsecureacceptance.cybersource.com/pay" method="post" (ngSubmit)="submitPaymentForm($event)">
+    <fieldset id="confirmation" style="display: none;">
+        <legend>Review Payment Details</legend>
+        <div>
+            <div *ngFor="let key of keys;">
+                <span class="fieldName">{{ key }}</span>
+                <span class="fieldValue">{{ paymentDetails[key] }}</span>
+            </div>
+        </div>
+    </fieldset>
+
+    <input *ngFor="let key of keys;" type="hidden" name="{{ key }}" [value]="paymentDetails[key]">
+    <div class="mt-5">
+        <input type="submit" id="btnsubmit" value="Pay now"/>
+    </div>
+</form>
