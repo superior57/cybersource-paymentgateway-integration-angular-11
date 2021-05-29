@@ -12,8 +12,10 @@ const baseUrl = 'http://localhost:8003/api';
 export class PaymentFormComponent implements OnInit {
 
   paymentDetails: any = {
-    access_key: 'db4b4b4ef86f3a36b6409761bbc2215e',
-    profile_id: '96BA0C0B-2F36-42E0-BF31-C01C848AD21E',
+    // access_key: 'db4b4b4ef86f3a36b6409761bbc2215e',
+    // profile_id: '96BA0C0B-2F36-42E0-BF31-C01C848AD21E',
+    access_key: 'd169e14aeb7f35bc80cb7fa25bc2b589',
+    profile_id: 'AF0859BB-297F-468F-B32A-524849139541',
     transaction_uuid: '',
     customer_ip_address: '',
     merchant_defined_data1: 'WC',
@@ -24,7 +26,7 @@ export class PaymentFormComponent implements OnInit {
     transaction_type: 'sale',
     reference_number: '',
     amount: '',
-    currency: 'QAR',
+    currency: 'USD',
     signature: ''
   };
 

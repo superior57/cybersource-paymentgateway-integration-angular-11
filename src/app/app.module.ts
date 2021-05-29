@@ -6,11 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaymentFormComponent } from './components/payment-form/payment-form.component';
+import { PaymentResponseComponent } from './components/payment-response/payment-response.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaymentFormComponent
+    PaymentFormComponent,
+    PaymentResponseComponent
   ],
   imports: [
     BrowserModule,
